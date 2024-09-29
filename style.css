@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Edu" "Australia" "VIC" "WA" "NT" "Hand";
+  font-style: italic;
+  background-color: #6c3a5c;
+  color: #c1ae7c;
+}
+h1 {
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container {
+  justify-content: center;
+  text-align: center;
+  border: 5px double black;
+  border-radius: 20px;
+  margin: 20px;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 50px;
+}
+.container:hover {
+  box-shadow: 10px 10px 20px white, -10px -10px 20px white;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.row{
+  display: flex;
+  width: fit-content;
+  border-radius: 20px;
+  justify-content: space-between;
+  background: white;
+}
+.input-box-1 {
+  display: flex;
+  flex: 1;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+.btn {
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: none;
+  font-size: 1.2rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: #dd5e98;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 50px rgb(235, 5, 146),
+    -10px -10px 50px inset rgb(235, 5, 146);
+  /* box-shadow: 10px 10px 20px #6c3a5c,
+    -10px -10px 20px  white; */
+}
+.msg {
+  margin-top: 12px;
+  display: flex;
+  margin-left: 20px;
+  text-align: start;
+}
+
+ul li {
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 10px;
+  border: none;
+  user-select: none;
+  position: relative;
+  border-radius: 20px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url(/Assets/Circle.png);
+  background-size: cover;
+  font-size: 1.5rem;
+  background-position: center;
+  left: -20px;
+  top: 15px;
+  margin-right: 20px;
+}
+ul li.checked {
+  color: #e0be36;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(/Assets/tick.svg);
+}
+ul li span {
+  position: absolute;
+  margin-left: 250px;
+  
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+ul li span:hover {
+  cursor: pointer;
+  background: #c1ae7c;
+}
